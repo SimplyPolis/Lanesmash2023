@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./overlay.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+</head>
+<body>
+<div class="container-fluid center">
+
+  <div class="d-inline-block TeamScoreboard TeamLeft NC">
+    <h2></h2>
+  </div>
+  <div class="d-inline-block Scoreboard">
+    <h5>Round <span>1</span></h5>
+    <h1>30:00</h1>
+    <div class="ScoreTeams">
+      <h3 class="d-inline-block TeamScoreLeft">0</h3>
+      <h3 class="d-inline-block TeamScoreRight">0</h3>
+    </div>
+
+  </div>
+  <div class="d-inline-block TeamScoreboard TeamRight">
+    <h2></h2>
+  </div>
+
+</div>
+<div id="lane">
+  <ul class="list-unstyled multi-steps">
+  </ul>
+</div>
+</body>
+<script src="overlay.js"></script>
+</html>

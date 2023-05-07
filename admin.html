@@ -1,0 +1,152 @@
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+  <link rel="stylesheet" href="./admin.css">
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <form id="matchInitializer">
+      <strong>SetUp</strong>
+      <div class="">
+        <div class="btn-toolbar mt-3 mb-3" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="input-group mr-4">
+            <div class="input-group-prepend">
+              <div class="input-group-text" id="btnGroupAddon">Lane</div>
+            </div>
+      		<select id="lanesdropdown" class="form-control" name="lanes">
+            </select>
+          </div>
+        </div>
+        <strong>Caster Info</strong>
+        <div>
+          <div class="btn-toolbar mt-3 mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="input-group mr-4">
+              <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">Caster 1</div>
+              </div>
+              <input id="caster1" type="text" class="form-control" placeholder="Caster 1 Name" aria-label="Caster 1 Name" aria-describedby="btnGroupAddon" required>
+            </div>
+            <div class="input-group mr-4">
+              <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">Caster 2</div>
+              </div>
+              <input id="caster2" type="text" class="form-control" placeholder="Caster 2 Name" aria-label="Caster 2 Name" aria-describedby="btnGroupAddon" required>
+            </div>
+          </div>
+      </div>
+      <strong>Teams Info</strong>
+      <div class="btn-toolbar mt-3 mb-3" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="input-group mr-4">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="btnGroupAddon">Team 1 Faction</div>
+          </div>
+          <select class="custom-select" id="selectFactionTeam1" required>
+            <option value="1">VS</option>
+            <option value="2" selected>NC</option>
+            <option value="3">TR</option>
+            </select>
+            </div>
+            <div class="input-group mr-4">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="btnGroupAddon">Team 1 Name</div>
+          </div>
+            <select id="team1dropdown" class="form-control" name="team1">
+            </select>
+        </div>
+        <div class="input-group mr-4">
+          <div class="input-group-prepend">
+            <div class="input-group-text" id="btnGroupAddon">Team 2 Faction</div>
+          </div>
+          <select class="custom-select" id="selectFactionTeam2" required>
+            <option value="1" selected>VS</option>
+            <option value="2">NC</option>
+            <option value="3">TR</option>
+          </select>
+          </div>
+          <div class="input-group mr-4">
+                    <div class="input-group-prepend">
+            <div class="input-group-text" id="btnGroupAddon">Team 2 Name</div>
+          </div>
+            <select id="team2dropdown" class="form-control" name="team2">
+            </select>
+                    </div>
+      </div>
+      <button id="btnServer" type="submit" class="btn btn-success">Initialize Match</button>
+    </div>
+  </form>
+  <div class="buttonsDiv d-none">
+  <hr>
+  <strong>Buttons</strong>
+  <div class="btn-toolbar mt-3 mb-3" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group" role="group">
+      <button id="btnStart" type="button" class="btn btn-success">Start Match / Round</button>
+      <button id="btnReset" type="button" class="btn btn-danger">Stop and Reset Match</button>
+    </div>
+  </div>
+  </div>
+  <hr>
+  <div class="d-inline-block">
+    <strong>Fix score Team 1</strong>
+    <div class="btn-toolbar mt-3 mb-3" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group mr-4" role="group">
+        <button type="button" id="minusScoreTeam1" class="btn btn-danger">-</button>
+        <button type="button" id="plusScoreTeam1"class="btn btn-success">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="d-inline-block">
+    <strong>Fix score Team 2</strong>
+    <div class="btn-toolbar mt-3 mb-3" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group mr-4" role="group">
+        <button type="button" id="minusScoreTeam2" class="btn btn-danger">-</button>
+        <button type="button" id="plusScoreTeam2" class="btn btn-success">+</button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <strong>All Urls</strong>
+  <div class="">
+    <ul class="list-unstyled">
+    <li><a href="/" target="_blank">Overlay</a></li>
+    <li><a href="/admin" target="_blank">Admin</a></li>
+    <li><a href="/versus" target="_blank">versus</a></li>
+  </ul>
+  </div>
+</div>
+
+</body>
+<script src="alert-sound-notify.js"></script>
+<script src="admin.js"></script>
+<script>
+   $(function() { 
+    const url = 'teams.json';
+
+    // Populate dropdown with list of provinces
+    $.getJSON(url, function (data) {
+      $.each(data, function (key, entry) {
+      $('#team1dropdown').append($('<option/>').attr("value", entry.name).text(entry.name));
+      $('#team2dropdown').append($('<option/>').attr("value", entry.name).text(entry.name));
+
+      })
+    });
+  
+  })
+$(function() { 
+    const url = 'lanes.json';
+
+    // Populate dropdown with list of provinces
+    $.getJSON(url, function (data) {
+      $.each(data, function (key, entry) {
+      $('#lanesdropdown').append($('<option/>').attr("value", entry.name).text(entry.name));
+
+      })
+    });
+  
+  })
+</script>
+</html>

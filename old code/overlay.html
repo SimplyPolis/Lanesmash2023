@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./overlay.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+</head>
+<body>
+<div class="container-fluid center">
+
+  <div class="d-inline-block TeamScoreboard TeamLeft">
+    <h2></h2>
+  </div>
+  <div class="d-inline-block Scoreboard">
+    <h5>Round <span>1</span></h5>
+    <h1>30:00</h1>
+    <div class="ScoreTeams">
+      <h3 class="d-inline-block TeamScoreLeft">0</h3>
+      <h3 class="d-inline-block TeamScoreRight">0</h3>
+    </div>
+
+  </div>
+  <div class="d-inline-block TeamScoreboard TeamRight">
+    <h2></h2>
+  </div>
+
+</div>
+<div id="lanes">
+  <div id="lane1" class="container-fluid lane">
+    <br>
+    <ul class="list-unstyled multi-steps">
+      <li class="206000 TechPlant">Heyoka Tech Plant</li>
+      <li class="206002 SmallOutPost">Heyoka Chemical</li>
+      <li class="222180 SmallOutPost">Chimney Rock Depot</li>
+      <li class="211001 SmallOutPost">Tumas Skylance Battery</li>
+      <li class="211000 TechPlant">Tumas Tech Plant</li>
+    </ul>
+  </div>
+  <div id="lane2" class="container-fluid lane">
+    <br>
+    <ul class="list-unstyled multi-steps">
+      <li class="204000 AmpStation">Kwahtee Amp Station</li>
+      <li class="204003 SmallOutPost">Kwahtee Mountain Complex</li>
+      <li class="222080 SmallOutPost">Genudine Physics Lab</li>
+      <li class="222330 SmallOutPost">Shrouded Skyway</li>
+      <li class="222340 SmallOutPost">The Scarfield Reliquary</li>
+      <li class="210001 SmallOutPost">Wokuk Ecological Preserve</li>
+      <li class="210000 AmpStation">Wokuk Amp Station</li>
+    </ul>
+  </div>
+  <div id="lane3" class="container-fluid lane">
+    <br>
+    <ul class="list-unstyled multi-steps">
+      <li class="216000 LargeOutPost">Crux Headquarters</li>
+      <li class="222120 SmallOutPost">Blackshard Tungsten Mine</li>
+      <li class="260004 SmallOutPost">Amerish ARX Reserve</li>
+      <li class="222130 SmallOutPost">Shadespire Farms</li>
+      <li class="215000 LargeOutPost">Crux Mining Operation	</li>
+    </ul>
+  </div>
+  <div id="lane4" class="container-fluid lane">
+    <br>
+    <ul class="list-unstyled multi-steps">
+      <li class="256000 AmpStation">Nott Amp Station</li>
+      <li class="256020 SmallOutPost">Nott Research Camp</li>
+      <li class="242000 SmallOutPost">Geological Survey Camp</li>
+      <li class="244000 SmallOutPost">Frostfall Overlook</li>
+      <li class="257020 SmallOutPost">Ymir Eastern Way</li>
+      <li class="257000 BioLab">Ymir Biolab</li>
+    </ul>
+  </div>
+  <div id="lane5" class="container-fluid lane">
+    <br>
+    <ul class="list-unstyled multi-steps">
+      <li class="253000 AmpStation">Freyr Amp Station</li>
+      <li class="253020 SmallOutPost">Freyr Geothermal</li>
+      <li class="233000 SmallOutPost">Aurora Materials Lab</li>
+      <li class="255030 SmallOutPost">Mani Lake Satellite</li>
+      <li class="255000 BioLab">Mani Bio Lab</li>
+    </ul>
+  </div>
+  <div id="lane6" class="container-fluid lane">
+    <br>
+    <ul class="list-unstyled multi-steps">
+      <li class="304000 BioLab">Zotz Bio Lab</li>
+      <li class="304030 SmallOutPost">Zotz Agriculture Lab</li>
+      <li class="282000 SmallOutPost">The Ziggurat</li>
+      <li class="283000 SmallOutPost">Nettlemire Gardens</li>
+      <li class="306020 SmallOutPost">Mulac Foundry</li>
+      <li class="306000 TechPlant">Mulac Tech Plant</li>
+    </ul>
+  </div>
+  <div id="lane7" class="container-fluid lane">
+    <br>
+    <ul class="list-unstyled multi-steps">
+      <li class="305000 TechPlant">Ghanan Tech Plant</li>
+      <li class="305010 SmallOutPost">Ghanan Southern Crossing</li>
+      <li class="277000 SmallOutPost">Johari Cove</li>
+      <li class="278000 SmallOutPost">Roothouse Distillery</li>
+      <li class="303010 SmallOutPost">Bitol StockPile</li>
+      <li class="303000 BioLab">Bitol Bio Lab</li>
+    </ul>
+  </div>
+  <div id="lane8" class="container-fluid lane">
+    <br>
+    <ul class="list-unstyled multi-steps">
+      <li class="304000 BioLab">Zotz Bio Lab</li>
+      <li class="304030 SmallOutPost">Zotz Agriculture Lab</li>
+      <li class="282000 SmallOutPost">The Ziggurat</li>
+      <li class="287060 SmallOutPost">Eastern Substation</li>
+      <li class="293000 BioLab">Genesis Terraforming Plant</li>
+    </ul>
+  </div>
+</div>
+</body>
+<script src="overlay.js"></script>
+</html>

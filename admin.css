@@ -1,0 +1,17 @@
+.success span {
+  background-color: #28A745;
+  border-color: #28A745;
+  color : white
+}
+
+
+.success label {
+  border-color: #28A745;
+  color : #28A745;
+}
+
+.success label:after {
+  background-color: #28A745;
+  border-color: #28A745;
+  color : white
+}

@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("Font/big_noodle_titling.ttf") format('truetype');
+}
+
+body {
+  font-family: "myFirstFont";
+  font-weight: bold;
+  font-size: normal;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+  font-size: 7rem;
+  color: white;
+  vertical-align:middle;
+}
+
+
+h2 {
+  font-size: 4rem;
+  color: white;
+  width:782px;
+  vertical-align:middle;
+  text-align: center;
+}
+
+.MainBackground {
+  width: 1920px;
+  height: 1080px;
+}
+
+.MainBackground.NC-TR {
+  background-image: url(PNG/versus-NC-TR.png);
+}
+.MainBackground.NC-VS {
+  background-image: url(PNG/versus-NC-VS.png);
+}
+.MainBackground.VS-NC {
+  background-image: url(PNG/versus-VS-NC.png);
+}
+.MainBackground.VS-TR {
+  background-image: url(PNG/versus-VS-TR.png);
+}
+.MainBackground.TR-VS {
+  background-image: url(PNG/versus-TR-VS.png);
+}
+.MainBackground.TR-NC {
+  background-image: url(PNG/versus-TR-NC.png);
+}
+.MainBackground.Roster {
+  background-image: url(PNG/roster_bg.png);
+}
+
+.center {
+  text-align: center;
+}
+
+.roster-left {
+  margin-top: 325px;
+  margin-left: 45px;
+  vertical-align: middle;
+}
+.roster-right {
+  margin-top: 325px;
+  margin-left: 1350px;
+  vertical-align: middle;
+}
+.roster-right1 {
+  margin-top: 325px;
+  margin-left: 1350px;
+  vertical-align: middle;
+}
+.roster-right2 {
+  margin-top: 325px;
+  vertical-align: middle;
+}
+.center > div {
+  vertical-align:middle;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

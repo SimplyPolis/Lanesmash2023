@@ -1,0 +1,380 @@
+{
+  "1": {
+    "id": "1",
+    "min": "30",
+    "zone": 6,
+    "name": "Heyoka <---> Tumas",
+    "bases": [
+      {
+        "id": 206000,
+        "type": "TechPlant",
+        "name": "Heyoka",
+        "home": "true"
+      },
+      {
+        "id": 206002,
+        "type": "SmallOutPost",
+        "name": "Heyoka Chemical Lab",
+        "home": "false"
+      },
+      {
+        "id": 222180,
+        "type": "SmallOutPost",
+        "name": "Chimney Rock Depot",
+        "home": "false"
+      },
+      {
+        "id": 211001,
+        "type": "SmallOutPost",
+        "name": "Tumas Skylance Battery",
+        "home": "false"
+      },
+      {
+        "id": 211000,
+        "type": "TechPlant",
+        "name": "Tumas",
+        "home": "true"
+      }
+    ]
+  },
+  "2": {
+    "id": "2",
+    "min": "30",
+    "zone": 4,
+    "name": "Cairn Station <---> Ixtab",
+    "bases": [
+      {
+        "id": 291000,
+        "type": "LargeOutPost",
+        "name": "Cairn Station",
+        "home": "true"
+      },
+      {
+        "id": 287110,
+        "type": "SmallOutPost",
+        "name": "Outpost Lambda",
+        "home": "false"
+      },
+      {
+        "id": 280000,
+        "type": "SmallOutPost",
+        "name": "Gourney Dam",
+        "home": "false"
+      },
+      {
+        "id": 301010,
+        "type": "SmallOutPost",
+        "name": "Ixtab Power Regulation",
+        "home": "false"
+      },
+      {
+        "id": 301000,
+        "type": "AmpStation",
+        "name": "Ixtab",
+        "home": "true"
+      }
+    ]
+  },
+  "3": {
+    "id": "3",
+    "min": "30",
+    "zone": 4,
+    "name": "Genesis Terraforming Plant <---> Zotz",
+    "bases": [
+      {
+        "id": 293000,
+        "type": "LargeOutPost",
+        "name": "Genesis Terraforming Plant",
+        "home": "true"
+      },
+      {
+        "id": 287060,
+        "type": "SmallOutPost",
+        "name": "Eastern Substation",
+        "home": "false"
+      },
+      {
+        "id": 282000,
+        "type": "SmallOutPost",
+        "name": "The Ziggurat",
+        "home": "false"
+      },
+      {
+        "id": 304030,
+        "type": "SmallOutPost",
+        "name": "Zotz Agriculture Lab",
+        "home": "false"
+      },
+      {
+        "id": 304000,
+        "type": "BioLab",
+        "name": "Zotz",
+        "home": "true"
+      }
+    ]
+  },
+  "4": {
+    "id": "4",
+    "min": "30",
+    "zone": 2,
+    "name": "Vanu Archives <---> The Crown",
+    "bases": [
+      {
+        "id": 5800,
+        "type": "LargeOutPost",
+        "name": "Vanu Archives",
+        "home": "true"
+      },
+      {
+        "id": 229,
+        "type": "SmallOutPost",
+        "name": "Snake Ravine Lookout",
+        "home": "false"
+      },
+      {
+        "id": 4030,
+        "type": "SmallOutPost",
+        "name": "Allatum Botany Wing",
+        "home": "false"
+      },
+      {
+        "id": 218,
+        "type": "SmallOutPost",
+        "name": "Ti Alloys, Inc.",
+        "home": "false"
+      },
+      {
+        "id": 6200,
+        "type": "LargeOutPost",
+        "name": "The Crown",
+        "home": "true"
+      }
+    ]
+  },
+  "5": {
+    "id": "5",
+    "min": "30",
+    "zone": 6,
+    "name": "Sungrey <---> Crux Mining Operation",
+    "bases": [
+      {
+        "id": 207000,
+        "type": "AmpStation",
+        "name": "Sungrey",
+        "home": "true"
+      },
+      {
+        "id": 207003,
+        "type": "SmallOutPost",
+        "name": "Sungrey Overwatch",
+        "home": "false"
+      },
+      {
+        "id": 222030,
+        "type": "SmallOutPost",
+        "name": "Hidden Ridge Mining",
+        "home": "false"
+      },
+      {
+        "id": 222020,
+        "type": "SmallOutPost",
+        "name": "Jagged Lance Mine",
+        "home": "false"
+      },
+      {
+        "id": 260004,
+        "type": "SmallOutPost",
+        "name": "Amerish ARX Reserve",
+        "home": "false"
+      },
+      {
+        "id": 222130,
+        "type": "SmallOutPost",
+        "name": "Shadespire Farms",
+        "home": "false"
+      },
+      {
+        "id": 215000,
+        "type": "LargeOutPost",
+        "name": "Crux Mining Operation",
+        "home": "true"
+      }
+    ]
+  },
+  "6": {
+    "id": "6",
+    "min": "30",
+    "zone": 6,
+    "name": "Auraxis Firearms Corp. <---> Granite Valley Garrison",
+    "bases": [
+      {
+        "id": 218000,
+        "type": "LargeOutPost",
+        "name": "Auraxis Firearms Corp.",
+        "home": "true"
+      },
+      {
+        "id": 222230,
+        "type": "SmallOutPost",
+        "name": "Highroads Station",
+        "home": "false"
+      },
+      {
+        "id": 222380,
+        "type": "SmallOutPost",
+        "name": "Barrik Electrical Station",
+        "home": "false"
+      },
+      {
+        "id": 222250,
+        "type": "SmallOutPost",
+        "name": "The Auraxian Cryobank",
+        "home": "false"
+      },
+      {
+        "id": 221000,
+        "type": "LargeOutPost",
+        "name": "Granite Valley Garrison",
+        "home": "true"
+      }
+    ]
+  },
+  "7": {
+    "id": "7",
+    "min": "30",
+    "zone": 4,
+    "name": "Ghanan <---> Bitol",
+    "bases": [
+      {
+        "id": 305000,
+        "type": "TechPlant",
+        "name": "Ghanan",
+        "home": "true"
+      },
+      {
+        "id": 305010,
+        "type": "SmallOutPost",
+        "name": "Ghanan Southern Crossing",
+        "home": "false"
+      },
+      {
+        "id": 277000,
+        "type": "SmallOutPost",
+        "name": "Johari Cove",
+        "home": "false"
+      },
+      {
+        "id": 278000,
+        "type": "SmallOutPost",
+        "name": "Roothouse Distillery",
+        "home": "false"
+      },
+      {
+        "id": 303010,
+        "type": "SmallOutPost",
+        "name": "Bitol Stockpile",
+        "home": "false"
+      },
+      {
+        "id": 303000,
+        "type": "BioLab",
+        "name": "Bitol",
+        "home": "true"
+      }
+    ]
+  },
+  "8": {
+    "id": "8",
+    "min": "30",
+    "zone": 2,
+    "name": "Zurvan <---> Rashnu",
+    "bases": [
+      {
+        "id": 118000,
+        "type": "AmpStation",
+        "name": "Zurvan",
+        "home": "true"
+      },
+      {
+        "id": 118030,
+        "type": "SmallOutPost",
+        "name": "Zurvan Network Complex",
+        "home": "false"
+      },
+      {
+        "id": 236,
+        "type": "SmallOutPost",
+        "name": "The Old Stockpile",
+        "home": "false"
+      },
+      {
+        "id": 235,
+        "type": "SmallOutPost",
+        "name": "Rust Mesa Lookout",
+        "home": "false"
+      },
+      {
+        "id": 3610,
+        "type": "SmallOutPost",
+        "name": "Rashnu Cavern",
+        "home": "false"
+      },
+      {
+        "id": 3601,
+        "type": "BioLab",
+        "name": "Rashnu",
+        "home": "true"
+      }
+    ]
+  },
+  "9": {
+    "id": "9",
+    "min": "30",
+    "zone": 4,
+    "name": "Genudine Holographics <---> Nason's Defiance",
+    "bases": [
+      {
+        "id": 289000,
+        "type": "LargeOutPost",
+        "name": "Genudine Holographics",
+        "home": "true"
+      },
+      {
+        "id": 287010,
+        "type": "SmallOutPost",
+        "name": "Construction Site Alpha",
+        "home": "false"
+      },
+      {
+        "id": 274000,
+        "type": "SmallOutPost",
+        "name": "Iron Quay",
+        "home": "false"
+      },
+      {
+        "id": 264000,
+        "type": "SmallOutPost",
+        "name": "Wainwright Armory",
+        "home": "false"
+      },
+      {
+        "id": 287080,
+        "type": "SmallOutPost",
+        "name": "Construction Site Epsilon",
+        "home": "false"
+      },
+      {
+        "id": 275000,
+        "type": "SmallOutPost",
+        "name": "Broken Vale Garrison",
+        "home": "false"
+      },
+      {
+        "id": 298000,
+        "type": "LargeOutPost",
+        "name": "Nason's Defiance",
+        "home": "true"
+      }
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("Font/big_noodle_titling.ttf") format('truetype');
+}
+
+body {
+  font-family: "myFirstFont";
+  font-weight: bold;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.TextScorboard {
+  position: relative;
+  z-index: 15;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+h3 {
+  font-size: 5rem;
+  color: #F5F5F5;
+}
+
+h5 {
+  color: white;
+  margin-bottom: -10px;
+  margin-top: 45px;
+}
+
+h2 {
+  color: white;
+  margin-top: 31px;
+}
+
+.TeamScoreLeft {
+  float: left;
+  margin-left: 38px;
+}
+
+.ScoreTeams {
+    margin-top: -88px;
+}
+
+.TeamScoreRight {
+  float: right;
+  margin-right: 38px;
+}
+
+.TeamLeft {
+  margin-right: -205px;
+}
+
+.TeamRight {
+    margin-left: -205px;
+}
+
+.Scoreboard {
+  position: relative;
+  background-image: url(PNG/ScoreBoard.png);
+  width: 584px;
+  height: 244px;
+  z-index: 10;
+}
+
+.TeamScoreboard {
+  position: relative;
+  width: 112px;
+  height: 94px;
+  margin-bottom: -33px;
+  z-index: 1;
+}
+
+.TeamScoreboard.NC {
+  background-image: url(PNG/NC-ScoreBoard.png);
+}
+.TeamScoreboard.TR {
+  background-image: url(PNG/TR-ScoreBoard.png);
+}
+.TeamScoreboard.VS {
+  background-image: url(PNG/VS-ScoreBoard.png);
+}
+
+.center {
+  text-align: center;
+}
+
+.multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
+  content: counter(stepNum);
+}
+.multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
+  background-color: #ededed;
+}
+
+.multi-steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.multi-steps > li {
+  counter-increment: stepNum;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  font-weight: bolder;
+  font-size: xx-large;
+  text-shadow:
+   -1px -1px 0 #ededed,
+    1px -1px 0 #ededed,
+    -1px 1px 0 #ededed,
+     1px 1px 0 #ededed;
+  ;
+}
+
+.NC {
+  color: #1d4698;
+}
+
+.TR {
+  color: #b90d01;
+}
+
+.VS {
+  color:#612597;
+}
+
+.NS {
+  color: #4A4A4A;
+}
+
+.multi-steps > li.LargeOutPost.NS:before {
+  content:url(SVG/LargeOutPost.svg);
+}
+.multi-steps > li.LargeOutPost.NC:before {
+  content:url(SVG/LargeOutPost-NC.svg);
+}
+.multi-steps > li.LargeOutPost.TR:before {
+  content:url(SVG/LargeOutPost-TR.svg);
+}
+.multi-steps > li.LargeOutPost.VS:before {
+  content:url(SVG/LargeOutPost-VS.svg);
+}
+
+.multi-steps > li.SmallOutPost.NS:before {
+    content:url(SVG/SmallOutPost.svg);
+}
+.multi-steps > li.SmallOutPost.NC:before {
+    content:url(SVG/SmallOutPost-NC.svg);
+}
+.multi-steps > li.SmallOutPost.TR:before {
+    content:url(SVG/SmallOutPost-TR.svg);
+}
+.multi-steps > li.SmallOutPost.VS:before {
+    content:url(SVG/SmallOutPost-VS.svg);
+}
+
+.multi-steps > li.AmpStation.NS:before {
+  content:url(SVG/AmpStation.svg);
+}
+.multi-steps > li.AmpStation.NC:before {
+  content:url(SVG/AmpStation-NC.svg);
+}
+.multi-steps > li.AmpStation.TR:before {
+  content:url(SVG/AmpStation-TR.svg);
+}
+.multi-steps > li.AmpStation.VS:before {
+  content:url(SVG/AmpStation-VS.svg);
+}
+
+.multi-steps > li.BioLab.NS:before {
+    content:url(SVG/BioLab.svg);
+}
+.multi-steps > li.BioLab.NC:before {
+    content:url(SVG/BioLab-NC.svg);
+}
+.multi-steps > li.BioLab.TR:before {
+    content:url(SVG/BioLab-TR.svg);
+}
+.multi-steps > li.BioLab.VS:before {
+    content:url(SVG/BioLab-VS.svg);
+}
+
+.multi-steps > li.TechPlant.NS:before {
+    content:url(SVG/TechPlant.svg);
+}
+.multi-steps > li.TechPlant.NC:before {
+    content:url(SVG/TechPlant-NC.svg);
+}
+.multi-steps > li.TechPlant.TR:before {
+    content:url(SVG/TechPlant-TR.svg);
+}
+.multi-steps > li.TechPlant.VS:before {
+    content:url(SVG/TechPlant-VS.svg);
+}
+
+.multi-steps > li:before {
+  display: block;
+  margin: 0 auto 4px;
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.multi-steps > li.NC:after {
+  background-color: #1d4698;
+}
+
+.multi-steps > li.TR:after {
+  background-color: #b90d01;
+}
+
+.multi-steps > li.VS:after {
+  background-color: #612597;
+}
+.multi-steps > li.NS:after {
+  background-color: #4A4A4A;
+}
+
+.multi-steps > li.NS.AfterNC:after   {
+  background-color: #1d4698;
+}
+.multi-steps > li.NS.AfterTR:after   {
+  background-color: #b90d01;
+}
+.multi-steps > li.NS.AfterVS:after   {
+  background-color: #612597;
+}
+
+.multi-steps > li.Conflict:after  {
+  background: repeating-linear-gradient(
+    45deg,
+    #fbd100,
+    #fbd100 10px,
+    #494949 10px,
+    #494949 20px
+  );
+  -webkit-animation:progress 3s linear infinite alternate;
+  -moz-animation:progress 3s linear infinite alternate;
+  -ms-animation:progress 3s linear infinite alternate;
+  animation:progress 3s linear infinite alternate;
+}
+@-webkit-keyframes progress{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -85px 0px;
+  }
+}
+@-moz-keyframes progress{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -85px 0px;
+  }
+}
+@-ms-keyframes progress{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -85px 0px;
+  }
+}
+@keyframes progress{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -85px 0px;
+  }
+}
+
+.multi-steps > li:after {
+  content: '';
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  z-index: -1;
+}
+
+.multi-steps > li:last-child:after {
+  display: none;
+}

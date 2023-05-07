@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("Font/big_noodle_titling.ttf") format('truetype');
+}
+
+body {
+  font-family: "myFirstFont";
+  font-weight: normal;
+  font-size: normal;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.MainBackground {
+  width: 1920px;
+  height: 1080px;
+  background-image: url(PNG/rosterBG.png);
+}
+
+h1 {
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.tableContainer {
+  background-color: #4A4A4AAA;
+  border: 3px solid white;
+}
+
+.tableBorder {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+tbody, thead {
+    color: white;
+}
+
+td, th {
+    border-top: 1px solid white;
+    padding: 4px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.2rem;
+    width: 150px;
+}
+
+tbody:last-child {
+  border-bottom: 1px solid white;
+}
+
+tr td:first-child {
+    text-align: left;
+}
