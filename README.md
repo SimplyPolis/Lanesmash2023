@@ -10,13 +10,26 @@ Make sure you have the latest [node.js](https://nodejs.org/en/) installed. This 
 
 ### Installation
 
+#### command line
 Run `install.bat`.
+
+#### Docker
+Create the Docker image
+
+    docker build . -t <username>/lanesmash2023
+    
+Ensure the image is listed in `docker images`
+
+    
+Now you'll see it listed if you run docker ps
 
 ## Running A Match
 
 ### Starting The Script
 
 **IMPORTANT:** You need to restart the script *BEFORE **EVERY** MATCH*, regardless of how the match ended or if the script terminated with an error. Failing to do so may result in subsequent matches being scored incorrectly and other undesirable effects.
+
+#### command line
 
 Run ``start.bat``. Alternatively, run the following from the command line:
    If the script started up successfully, you should see a message like this in opened terminal window:
@@ -25,6 +38,35 @@ Run ``start.bat``. Alternatively, run the following from the command line:
    Starting server...
    Connect to website @ localhost:4000
    ```
+
+#### Docker
+
+Remind yourself of the image name
+
+    > docker images
+    REPOSITORY                              TAG                 IMAGE ID       CREATED          SIZE
+    varunda/lanesmash2023                   latest              bde154c23926   30 minutes ago   983MB
+
+Run the Docker image
+
+    > docker run -p 4000:4000 --name $NAME -d <username>/lanesmash2023
+    cc69af5ca2b01713adfff3064853f4b3ef91f6599e74f499a0e810fdb0fdd567
+    
+Confirm it's running
+ 
+    > docker ps 
+    CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+    5716755e3cbb   varunda/lanesmash2023     "docker-entrypoint.s…"   26 minutes ago   Up 26 minutes   0.0.0.0:4000->4000/tcp, :::4000->4000/tcp   ls23-4000
+
+You can check the logs by using `docker logs {CONTAINER ID/NAME}`
+
+    > docker logs ls23-4000
+    Starting server...
+    Connect to website @ localhost:4000
+    Here are all the different urls:
+            http://localhost:4000/          -> For the main overlay
+            http://localhost:4000/admin     -> Admin interface for the match
+            http://localhost:4000/versus    -> Display score at the half and end
 
 ### Setting Up A Match
 
