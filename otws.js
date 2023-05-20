@@ -27,6 +27,7 @@ ws.on('close', function (data) {
   console.log('Socket is closed. Reconnect will be attempted in 1 second.', data);
     setTimeout(function() {
       connect();
+      subscribe(runningWs);
     }, 1000);
   
 });

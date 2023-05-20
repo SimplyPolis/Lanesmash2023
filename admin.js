@@ -3,8 +3,10 @@ socket.emit('subscribe', {admin:true});
 
 $(function(){
   $( "#matchInitializer" ).submit(function( event ) {
-    lane = ($("#selectFactionTeam1").index())
-    caster1 = $("#caster1").val().toUpperCase()
+var x = document.getElementById("lanesdropdown").selectedIndex;
+var y = document.getElementById("lanesdropdown").options;
+lane =y[x].index+1
+	caster1 = $("#caster1").val().toUpperCase()
     caster2 = $("#caster2").val().toUpperCase()
     team1 = $("#team1dropdown").val().toUpperCase()
     team2 = $("#team2dropdown").val().toUpperCase()
