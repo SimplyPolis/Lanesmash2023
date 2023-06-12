@@ -117,30 +117,30 @@
     "id": "4",
     "min": "30",
     "zone": 2,
-    "name": "Vanu Archives <---> The Crown",
+    "name": "Dahaka <---> The Crown",
     "bases": [
       {
-        "id": 5800,
-        "type": "LargeOutPost",
-        "name": "Vanu Archives",
+        "id": 3201,
+        "type": "AmpStation",
+        "name": "Dahaka",
         "home": "true"
       },
       {
-        "id": 229,
+        "id": 3230,
         "type": "SmallOutPost",
-        "name": "Snake Ravine Lookout",
+        "name": "Dahaka Southern Post",
         "home": "false"
       },
       {
-        "id": 4030,
+        "id": 217,
         "type": "SmallOutPost",
-        "name": "Allatum Botany Wing",
+        "name": "Seabed Listening Post",
         "home": "false"
       },
       {
-        "id": 218,
+        "id": 219,
         "type": "SmallOutPost",
-        "name": "Ti Alloys, Inc.",
+        "name": "Ceres Hydroponics",
         "home": "false"
       },
       {
@@ -154,93 +154,43 @@
   "5": {
     "id": "5",
     "min": "30",
-    "zone": 6,
-    "name": "Sungrey <---> Crux Mining Operation",
+    "zone": 4,
+    "name": "Acan <---> Bravata PMC Compound",
     "bases": [
       {
-        "id": 207000,
-        "type": "AmpStation",
-        "name": "Sungrey",
+        "id": 302000,
+        "type": "BioLab",
+        "name": "Acan",
         "home": "true"
       },
       {
-        "id": 207003,
+        "id": 302030,
         "type": "SmallOutPost",
-        "name": "Sungrey Overwatch",
+        "name": "Acan Southern Labs",
         "home": "false"
       },
       {
-        "id": 222030,
+        "id": 276000,
         "type": "SmallOutPost",
-        "name": "Hidden Ridge Mining",
+        "name": "Woodman ASE Labs",
         "home": "false"
       },
       {
-        "id": 222020,
+        "id": 287090,
         "type": "SmallOutPost",
-        "name": "Jagged Lance Mine",
+        "name": "Mossridge Command Center",
         "home": "false"
       },
       {
-        "id": 260004,
-        "type": "SmallOutPost",
-        "name": "Amerish ARX Reserve",
-        "home": "false"
-      },
-      {
-        "id": 222130,
-        "type": "SmallOutPost",
-        "name": "Shadespire Farms",
-        "home": "false"
-      },
-      {
-        "id": 215000,
+        "id": 294000,
         "type": "LargeOutPost",
-        "name": "Crux Mining Operation",
+        "name": "Bravata PMC Compound",
         "home": "true"
       }
     ]
   },
   "6": {
     "id": "6",
-    "min": "30",
-    "zone": 6,
-    "name": "Auraxis Firearms Corp. <---> Granite Valley Garrison",
-    "bases": [
-      {
-        "id": 218000,
-        "type": "LargeOutPost",
-        "name": "Auraxis Firearms Corp.",
-        "home": "true"
-      },
-      {
-        "id": 222230,
-        "type": "SmallOutPost",
-        "name": "Highroads Station",
-        "home": "false"
-      },
-      {
-        "id": 222380,
-        "type": "SmallOutPost",
-        "name": "Barrik Electrical Station",
-        "home": "false"
-      },
-      {
-        "id": 222250,
-        "type": "SmallOutPost",
-        "name": "The Auraxian Cryobank",
-        "home": "false"
-      },
-      {
-        "id": 221000,
-        "type": "LargeOutPost",
-        "name": "Granite Valley Garrison",
-        "home": "true"
-      }
-    ]
-  },
-  "7": {
-    "id": "7",
     "min": "30",
     "zone": 4,
     "name": "Ghanan <---> Bitol",
@@ -283,8 +233,8 @@
       }
     ]
   },
-  "8": {
-    "id": "8",
+  "7": {
+    "id": "7",
     "min": "30",
     "zone": 2,
     "name": "Zurvan <---> Rashnu",
@@ -323,56 +273,6 @@
         "id": 3601,
         "type": "BioLab",
         "name": "Rashnu",
-        "home": "true"
-      }
-    ]
-  },
-  "9": {
-    "id": "9",
-    "min": "30",
-    "zone": 4,
-    "name": "Genudine Holographics <---> Nason's Defiance",
-    "bases": [
-      {
-        "id": 289000,
-        "type": "LargeOutPost",
-        "name": "Genudine Holographics",
-        "home": "true"
-      },
-      {
-        "id": 287010,
-        "type": "SmallOutPost",
-        "name": "Construction Site Alpha",
-        "home": "false"
-      },
-      {
-        "id": 274000,
-        "type": "SmallOutPost",
-        "name": "Iron Quay",
-        "home": "false"
-      },
-      {
-        "id": 264000,
-        "type": "SmallOutPost",
-        "name": "Wainwright Armory",
-        "home": "false"
-      },
-      {
-        "id": 287080,
-        "type": "SmallOutPost",
-        "name": "Construction Site Epsilon",
-        "home": "false"
-      },
-      {
-        "id": 275000,
-        "type": "SmallOutPost",
-        "name": "Broken Vale Garrison",
-        "home": "false"
-      },
-      {
-        "id": 298000,
-        "type": "LargeOutPost",
-        "name": "Nason's Defiance",
         "home": "true"
       }
     ]

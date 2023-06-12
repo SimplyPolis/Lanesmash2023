@@ -1,7 +1,7 @@
 const app = require('./app.js'),
       team = require('./team.js'),
       match = require('./match.js');
-
+    
 
 module.exports = {
     init: function(io) {
@@ -30,6 +30,9 @@ module.exports = {
         });
         socket.on('Reset', function() {
           match.reset()
+        });
+       socket.on('APIReset', function() {
+       match.APIReset()
         });
         socket.on('addScore', function(data) {
           match.addScoreToTeam(data.teamId)

@@ -40,7 +40,11 @@ lane =y[x].index+1
       $( ".buttonsDiv").addClass("d-none")
     }
   })
-
+  $("#btnAPI").on('click', function(){
+    if (confirm("Are you sure you want to reset the API connection")) {
+      socket.emit('APIReset');
+    }
+  })
   $("#minusScoreTeam1").on('click', function(){
     sendScore(1,'sub')
   })

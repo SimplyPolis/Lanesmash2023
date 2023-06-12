@@ -64,9 +64,7 @@ function setCaster2(value) {
   caster2 = value
 }
 
-function dealWithTheData(raw) {
-  var data = JSON.parse(raw);
-  data=data.payload;
+function dealWithTheData(data) {
   if(data){
   if (hasBeenInit == true && lanes.getLaneIDs(lane_id).includes(data.facility_id)) {
       if (data.new_faction_id != data.old_faction_id && hasStart==true) {
@@ -103,6 +101,7 @@ axios.get(qster)
 })
    refresh()
 }
+
 function initbases(data){
 	let lids=lanes.getLaneIDs(lane_id)
 	for (let base in data["map_list"][0]["Regions"]["Row"]){
@@ -200,6 +199,24 @@ function addScoreToTeam(teamId) {
 function removeScoreFromTeam(teamId) {
   team.reduceScore(teamId)
 }
+
+function APIReset(){
+	console.log("API Reset");
+	otws.resetMatch();
+ 
+	let qster="https://census.daybreakgames.com/s:"
+  qster=qster.concat(serviceid,"/get/ps2:v2/map/?world_id=",server_id,"&zone_ids=",lanes.getLane(lane_id)["zone"],"&c:join=type:map_region^list:0^inject_at:facility^on:Regions.Row.RowData.RegionId^to:map_region_id^show:facility_id")
+  
+axios.get(qster)
+.then((res) => {
+	initbases(res.data);
+})
+.catch((err) => {
+	console.log(err)
+})
+   refresh()
+
+}
 exports.dealWithTheData = dealWithTheData;
 exports.start = start;
 exports.stop = stop;
@@ -221,3 +238,4 @@ exports.getRound = getRound;
 exports.setFactionUsed = setFactionUsed;
 exports.getFactionUsed = getFactionUsed;
 exports.isFactionUsed = isFactionUsed;
+exports.APIReset =APIReset;
